@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-06T19:55:21 IST" name="InetBanking_V1" finished-at="2022-02-06T19:56:11 IST" duration-ms="49634">
+    <groups>
+    </groups>
+    <test started-at="2022-02-06T19:55:21 IST" name="Test" finished-at="2022-02-06T19:56:11 IST" duration-ms="49634">
+      <class name="com.internetBanking.TestCases.T_02_LoginDDt">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.internetBanking.TestCases.T_02_LoginDDt@5e4c8041]" started-at="2022-02-06T19:56:05 IST" name="setup" finished-at="2022-02-06T19:56:09 IST" duration-ms="3349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginDDt(java.lang.String, java.lang.String)[pri:0, instance:com.internetBanking.TestCases.T_02_LoginDDt@5e4c8041]" started-at="2022-02-06T19:56:10 IST" name="LoginDDt" data-provider="LoginData" finished-at="2022-02-06T19:56:10 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Chart]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Chart
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:51)
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:147)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:801)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/Chart
+at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1012)
+at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150)
+at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:862)
+at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:760)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:681)
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:639)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+at org.apache.poi.xssf.usermodel.XSSFRelation.<clinit>(XSSFRelation.java:124)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.beforeDocumentRead(XSSFWorkbook.java:356)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:285)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:309)
+at com.utility.XLUtils.getRowCount(XLUtils.java:25)
+at com.internetBanking.TestCases.T_02_LoginDDt.getData(T_02_LoginDDt.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:78)
+at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:47)
+... 29 more
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.Chart
+at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+... 51 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginDDt -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.internetBanking.TestCases.T_02_LoginDDt@5e4c8041]" started-at="2022-02-06T19:56:10 IST" name="teardown" finished-at="2022-02-06T19:56:11 IST" duration-ms="1116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.internetBanking.TestCases.T_02_LoginDDt -->
+      <class name="com.internetBanking.TestCases.T_01_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.internetBanking.TestCases.T_01_LoginTest@3745e5c6]" started-at="2022-02-06T19:55:21 IST" name="setup" finished-at="2022-02-06T19:55:36 IST" duration-ms="14409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:0, instance:com.internetBanking.TestCases.T_01_LoginTest@3745e5c6]" started-at="2022-02-06T19:55:36 IST" name="LoginTest" finished-at="2022-02-06T19:56:04 IST" duration-ms="28590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.internetBanking.TestCases.T_01_LoginTest@3745e5c6]" started-at="2022-02-06T19:56:05 IST" name="teardown" finished-at="2022-02-06T19:56:05 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.internetBanking.TestCases.T_01_LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- InetBanking_V1 -->
+</testng-results>

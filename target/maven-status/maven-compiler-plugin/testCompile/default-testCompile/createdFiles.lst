@@ -1,0 +1,7 @@
+com\Ibanking\base\BaseClass.class
+icom\netBanking_V1\pageobjects\LoginPage.class
+com\internetBanking\TestCases\T_02_LoginDDt.class
+com\utility\Reporting.class
+com\internetBanking\TestCases\T_01_LoginTest.class
+com\utility\XLUtils.class
+com\utility\ConfigReader.class

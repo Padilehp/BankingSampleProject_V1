@@ -1,0 +1,2 @@
+cd E:\taxregine\BankingProject\inetBanking_V1
+mvn clean install
